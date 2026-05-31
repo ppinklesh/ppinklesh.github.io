@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pinklesh Parjapati — Backend Engineer</title>
+<title>Pinklesh Parjapati — Senior Software Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" integrity="sha384-khOBgpDwv0S7MVQNopzcLusumJKsZ2NzOR/dSTiE65KSj46xSkjanogh1NaKOshH" crossorigin="anonymous">
 <style>
@@ -240,11 +240,28 @@
   }
 
   .hero-left {
-    padding: 48px 60px 48px;
+    padding: 32px 60px 48px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
+  }
+
+  .hero-dp {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 2px solid var(--green);
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0,229,160,0.15);
+    flex-shrink: 0;
+  }
+
+  .hero-name-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
   }
 
   .hero-tag {
@@ -259,7 +276,7 @@
     font-size: 13px;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: fit-content;
   }
 
@@ -269,20 +286,21 @@
     font-size: clamp(48px, 6vw, 84px);
     line-height: 0.95;
     color: var(--white);
+    white-space: nowrap;
     letter-spacing: -2px;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
 
   .hero-name span {
     color: var(--green);
-    display: block;
+    display: inline;
   }
 
   .hero-title {
     font-family: var(--mono);
     font-size: 14px;
     color: var(--text2);
-    margin-bottom: 28px;
+    margin-bottom: 12px;
     letter-spacing: 0.05em;
   }
 
@@ -297,7 +315,7 @@
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
-    margin-bottom: 28px;
+    margin-bottom: 16px;
   }
 
   .metric {
@@ -338,8 +356,9 @@
 
   .hero-ctas {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     flex-wrap: wrap;
+    margin-bottom: 0;
   }
 
   .btn {
@@ -1238,7 +1257,7 @@
   <div class="uptick">UPTIME<span id="uptime">99.9%</span></div>
   <div class="uptick">API LATENCY<span>&lt;300ms</span></div>
   <div class="uptick">SYSTEMS<span>HEALTHY</span></div>
-  <div class="uptick">EXPERIENCE<span>5+ YRS</span></div>
+  <div class="uptick">EXPERIENCE<span>8+ YRS</span></div>
   <div class="uptick">LOCATION<span>GURGAON, IN</span></div>
   <div class="uptick">STATUS<span>OPEN TO OPPORTUNITIES</span></div>
 </div>
@@ -1248,11 +1267,14 @@
   <div class="hero-left">
     <div class="hero-tag">
       <div class="status-dot"></div>
-      Senior Backend Engineer
+      Senior Software Engineer
     </div>
 
-    <div class="hero-name">
-      Pinklesh<span>Parjapati</span>
+    <div class="hero-name-row">
+      <div class="hero-name">
+        Pinklesh <span>Parjapati</span>
+      </div>
+      <img src="profile.jpg" alt="Pinklesh Parjapati" class="hero-dp">
     </div>
     <div class="hero-title">
       <span class="prompt">~/dev $</span> build --scale=infinity --domain=fintech,legaltech
@@ -1287,7 +1309,7 @@
         ⌘ LinkedIn
       </a>
     </div>
-    <div class="contact-reveal" id="contactReveal" style="margin-top:12px; font-family:var(--mono); font-size:13px; color:var(--text); line-height:1.8;">
+    <div class="contact-reveal" id="contactReveal" style="margin-top:8px; font-family:var(--mono); font-size:13px; color:var(--text); line-height:1.8;">
       <span style="color:var(--green);">✉</span> ppinklesh@gmail.com <button type="button" class="copy-icon" onclick="navigator.clipboard.writeText('ppinklesh@gmail.com')" title="Copy email" style="cursor:pointer; color:var(--text2); margin-left:6px; background:none; border:none; font-size:inherit; font-family:inherit;">⧉</button><br>
       <span style="color:var(--green);">☎</span> +91-8882339089 <button type="button" class="copy-icon" onclick="navigator.clipboard.writeText('+91-8882339089')" title="Copy number" style="cursor:pointer; color:var(--text2); margin-left:6px; background:none; border:none; font-size:inherit; font-family:inherit;">⧉</button>
     </div>
@@ -1325,6 +1347,7 @@
       <div class="skill-tags">
         <span class="tag">Python</span>
         <span class="tag">SQL</span>
+        <span class="tag">JavaScript</span>
       </div>
     </div>
     <div class="skill-block">
@@ -1336,6 +1359,7 @@
         <span class="tag">FastAPI</span>
         <span class="tag">Django</span>
         <span class="tag">Flask</span>
+        <span class="tag">Celery</span>
       </div>
     </div>
     <div class="skill-block">
@@ -1350,6 +1374,7 @@
         <span class="tag">API Gateway</span>
         <span class="tag">EC2</span>
         <span class="tag">Docker</span>
+        <span class="tag">SigNoz</span>
       </div>
     </div>
     <div class="skill-block">
@@ -1374,6 +1399,20 @@
         <span class="tag">BFF</span>
         <span class="tag">REST APIs</span>
         <span class="tag">Event-Driven</span>
+        <span class="tag">Monolith Migration</span>
+      </div>
+    </div>
+    <div class="skill-block">
+      <div class="skill-block-header">
+        <div class="skill-icon">⚙</div>
+        <div class="skill-cat">Specialties</div>
+      </div>
+      <div class="skill-tags">
+        <span class="tag">Web Crawling</span>
+        <span class="tag">Data Pipelines</span>
+        <span class="tag">Job Scheduling</span>
+        <span class="tag">Real-Time Monitoring</span>
+        <span class="tag">Automation</span>
       </div>
     </div>
     <div class="skill-block">
@@ -1404,8 +1443,8 @@
       <div class="exp-header">
         <div>
           <div class="exp-domain">FinTech</div>
-          <div class="exp-role">Software Development Engineer</div>
-          <div class="exp-co">Appreciate Platform Private Limited, Gurgaon</div>
+          <div class="exp-role">Senior Software Engineer</div>
+          <div class="exp-co">Appreciate, Remote</div>
         </div>
         <div class="exp-date">Sep 2024 – Present<br><span style="color:var(--green); font-size:10px;">● ACTIVE</span></div>
       </div>
@@ -1427,7 +1466,7 @@
       <div class="exp-header">
         <div>
           <div class="exp-domain">LegalTech</div>
-          <div class="exp-role">Software Development Engineer — Backend</div>
+          <div class="exp-role">SDE-II (Project Lead)</div>
           <div class="exp-co">Legistify Services Pvt. Ltd., Gurgaon</div>
         </div>
         <div class="exp-date">Mar 2021 – Sep 2024</div>
@@ -1443,6 +1482,65 @@
         <span class="tag">Django</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span>
         <span class="tag">Redis</span><span class="tag">Elasticsearch</span><span class="tag">SQS</span>
         <span class="tag">CronJob</span><span class="tag">AWS</span>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div>
+          <div class="exp-domain">Content Moderation</div>
+          <div class="exp-role">Senior Representative — YouTube Trust & Safety</div>
+          <div class="exp-co">Concentrix, Gurgaon</div>
+        </div>
+        <div class="exp-date">Jan 2018 – Mar 2021</div>
+      </div>
+      <ul class="exp-bullets">
+        <li><span>Audited YouTube accounts and channels, making content moderation decisions on videos, comments, and user sustainability.</span></li>
+        <li><span>Promoted to <strong>Senior Representative</strong> within 2 years based on consistent quality and decision-making accuracy.</span></li>
+        <li><span>Handled high-volume queues for YouTube client services, maintaining SLA compliance and quality benchmarks.</span></li>
+      </ul>
+      <div class="exp-stack">
+        <span class="tag">Content Moderation</span><span class="tag">Policy Enforcement</span><span class="tag">YouTube</span>
+        <span class="tag">Decision Auditing</span>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div>
+          <div class="exp-domain">Renewable Energy</div>
+          <div class="exp-role">Co-Founder & Managing Director</div>
+          <div class="exp-co">Future Generation Technology Pvt Ltd, Gurgaon</div>
+        </div>
+        <div class="exp-date">Nov 2017 – Oct 2019</div>
+      </div>
+      <ul class="exp-bullets">
+        <li><span>Co-founded a <strong>renewable energy</strong> consultancy focused on solar power generation solutions.</span></li>
+        <li><span>Managed end-to-end operations including client acquisition, project delivery, and vendor partnerships.</span></li>
+        <li><span>Led strategic planning and business development for the company's initial growth phase.</span></li>
+      </ul>
+      <div class="exp-stack">
+        <span class="tag">Entrepreneurship</span><span class="tag">Business Development</span><span class="tag">Renewable Energy</span>
+        <span class="tag">Project Management</span>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-header">
+        <div>
+          <div class="exp-domain">Manufacturing</div>
+          <div class="exp-role">Engineering Trainee</div>
+          <div class="exp-co">Flash Electronics India Pvt Ltd, Pune</div>
+        </div>
+        <div class="exp-date">Oct 2015 – Mar 2016</div>
+      </div>
+      <ul class="exp-bullets">
+        <li><span>Completed an engineering internship at a leading manufacturer of electronic and electrical auto components for the automobile industry.</span></li>
+        <li><span>Gained hands-on experience with industrial processes, quality assurance, and production workflows.</span></li>
+      </ul>
+      <div class="exp-stack">
+        <span class="tag">Electronics</span><span class="tag">Automotive</span><span class="tag">Manufacturing</span>
+        <span class="tag">Quality Assurance</span>
       </div>
     </div>
 
@@ -1508,6 +1606,52 @@
       <a class="project-link" href="https://legistify.com/" target="_blank">
         ↗ View Legistify
       </a>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">PROJECT_03</div>
+      <div class="project-title">Web Crawler — Microservice Architecture</div>
+      <div class="project-desc">Built a microservice architecture from scratch to automate data collection across diverse government websites. Developed a robust job scheduler, captcha-solving service, and orchestrated a monolithic-to-microservices migration for enhanced scalability.</div>
+      <div class="project-stats">
+        <div class="pstat">
+          <div class="pstat-val">90%</div>
+          <div class="pstat-label">System Improvement</div>
+        </div>
+        <div class="pstat">
+          <div class="pstat-val">40%</div>
+          <div class="pstat-label">Faster Data Retrieval</div>
+        </div>
+        <div class="pstat">
+          <div class="pstat-val">60%</div>
+          <div class="pstat-label">Crawler Efficiency</div>
+        </div>
+      </div>
+      <div class="exp-stack" style="margin-bottom:16px;">
+        <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Celery</span><span class="tag">SQS</span><span class="tag">Redis</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-num">PROJECT_04</div>
+      <div class="project-title">Crawler Monitoring System</div>
+      <div class="project-desc">Created a scraper monitoring system to track daily case data, detect successful scrapes, failures, and code errors. Implemented automated notifications for website changes and code bugs, with an automatic retry feature for failed data retrievals.</div>
+      <div class="project-stats">
+        <div class="pstat">
+          <div class="pstat-val">90%</div>
+          <div class="pstat-label">Error Reduction</div>
+        </div>
+        <div class="pstat">
+          <div class="pstat-val">Auto</div>
+          <div class="pstat-label">Retry on Failure</div>
+        </div>
+        <div class="pstat">
+          <div class="pstat-val">24/7</div>
+          <div class="pstat-label">Real-Time Alerts</div>
+        </div>
+      </div>
+      <div class="exp-stack" style="margin-bottom:16px;">
+        <span class="tag">Python</span><span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Slack API</span><span class="tag">Cron</span>
+      </div>
     </div>
 
   </div>
@@ -1802,6 +1946,27 @@ schema_<span class="ab">tenant_002</span>
           </div>
         </div>
 
+        <div class="design-card-full" style="background: var(--panel); border-top: 1px solid var(--border);">
+          <div class="design-card-label">Certified Credentials</div>
+          <div class="design-card-title">Industry Certifications</div>
+          <div class="design-card-desc" style="max-width:700px;">
+            <div style="margin-bottom:10px;">
+              <strong>Cutshort Certified Python — Advanced</strong> <span style="color:var(--text2);">(Aug 2023)</span><br>
+              <a href="https://cutshort.io/certificate/87385" target="_blank" style="color:var(--green); text-decoration:none; font-size:12px;">View Certificate →</a>
+            </div>
+            <div style="margin-bottom:10px;">
+              <strong>Data Structures & Algorithms in Python</strong> <span style="color:var(--text2);">(Sep 2020)</span><br>
+              <span style="color:var(--text2); font-size:12px;">Coding Ninjas</span><br>
+              <a href="https://files.codingninjas.in/certificate822928c0f7f6c82ce3eea332dee61b5bda85d1.pdf" target="_blank" style="color:var(--green); text-decoration:none; font-size:12px;">View Certificate →</a>
+            </div>
+            <div>
+              <strong>Introduction to Python</strong> <span style="color:var(--text2);">(Apr 2020)</span><br>
+              <span style="color:var(--text2); font-size:12px;">Coding Ninjas</span><br>
+              <a href="https://files.codingninjas.in/certificate822929ccdde518f2815ef62a73ea02fcf94ac1.pdf" target="_blank" style="color:var(--green); text-decoration:none; font-size:12px;">View Certificate →</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -1868,7 +2033,7 @@ schema_<span class="ab">tenant_002</span>
     </div>
     <div class="video-badge">
       <div class="status-dot"></div>
-      Pinklesh Parjapati — Backend Engineer
+      Pinklesh Parjapati — Senior Software Engineer
     </div>
   </div>
 </section>
