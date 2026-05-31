@@ -1274,9 +1274,9 @@
     </div>
 
     <div class="hero-ctas">
-      <a href="mailto:ppinklesh@gmail.com" class="btn btn-primary">
+      <button type="button" class="btn btn-primary" id="getInTouchBtn">
         <span>→</span> Get in Touch
-      </a>
+      </button>
       <a href="Pinklesh_Resume.pdf" target="_blank" download class="btn btn-primary">
         <span>↓</span> Resume
       </a>
@@ -1286,6 +1286,10 @@
       <a href="https://linkedin.com/in/pinklesh" target="_blank" class="btn btn-ghost">
         ⌘ LinkedIn
       </a>
+    </div>
+    <div class="contact-reveal" id="contactReveal" style="margin-top:12px; font-family:var(--mono); font-size:13px; color:var(--text); line-height:1.8;">
+      <span style="color:var(--green);">✉</span> ppinklesh@gmail.com <button type="button" class="copy-icon" onclick="navigator.clipboard.writeText('ppinklesh@gmail.com')" title="Copy email" style="cursor:pointer; color:var(--text2); margin-left:6px; background:none; border:none; font-size:inherit; font-family:inherit;">⧉</button><br>
+      <span style="color:var(--green);">☎</span> +91-8882339089 <button type="button" class="copy-icon" onclick="navigator.clipboard.writeText('+91-8882339089')" title="Copy number" style="cursor:pointer; color:var(--text2); margin-left:6px; background:none; border:none; font-size:inherit; font-family:inherit;">⧉</button>
     </div>
   </div>
 
@@ -1877,6 +1881,21 @@ schema_<span class="ab">tenant_002</span>
 </footer>
 
 <script>
+  // GET IN TOUCH TOGGLE
+  document.getElementById('getInTouchBtn').addEventListener('click', () => {
+    const el = document.getElementById('contactReveal');
+    el.style.display = el.style.display === 'none' ? '' : 'none';
+  });
+
+  document.querySelectorAll('.copy-icon').forEach(icon => {
+    icon.addEventListener('click', () => {
+      const original = icon.textContent;
+      icon.textContent = '✓';
+      icon.style.color = 'var(--green)';
+      setTimeout(() => { icon.textContent = original; icon.style.color = 'var(--text2)'; }, 1200);
+    });
+  });
+
   // THEME TOGGLE
   const html = document.documentElement;
   const toggleBtn = document.getElementById('themeToggle');
